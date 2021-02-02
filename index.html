@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Run JS in your browser</title>
+  <meta content="Run JS" property="og:title">
+	<meta content="A website to run JS inside of your browser." property="og:description">
+	<meta content="runjs.daguacaplushy.repl.co" property="og:url">
+	<meta content="#43B581" data-react-helmet="true" name="theme-color">
+	<link rel="stylesheet" href="code.css">
+	<script src="run.js">
+	</script>
+</head>
+
+<body style="background: #282828;">
+	<textarea id="code" style="width: 100%; height: 100%; border: none; position:fixed; background: #282828; color:white;" spellcheck="false" placeholder="Type some JS here."></textarea>
+  <center>
+    <button id="run" onclick="run()" style="position: absolute; bottom: 1%;">
+      Click to run!
+    </button>
+  </center>
+</body>
+
+</html>

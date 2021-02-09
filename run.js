@@ -22,9 +22,11 @@ function run() {
       document.body.style.background = "#282828";
       alert("Changed to dark mode.")
       return;
+    } else if (runCode.includes("run()")) {
+      throw WebAssembly.RuntimeError("your going to crash your pc")
     }
     output = eval(runCode)
-  } catch(err) {
+  } catch (err) {
     alert(err)
   }
 }
